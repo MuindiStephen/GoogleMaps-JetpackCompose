@@ -14,6 +14,7 @@ import com.google.maps.android.compose.rememberCameraPositionState
 @Composable
 fun MapsScreenUi() {
 
+    // declaring location
     val location = LatLng(0.6128399,34.5195933)
     val cameraPositionState =  rememberCameraPositionState {
         position =  CameraPosition.fromLatLngZoom(location, 16f)
